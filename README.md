@@ -122,6 +122,4 @@ while ($true) {
 * **Screenshot Interval**: If you want to change the interval between screenshots, modify the `$seconds` value in the PowerShell script.
 * **Webhook URL**: Change `WEBHOOK_HERE` to your actual Discord webhook URL.
 
----
 
-Nadam se da je ovo sada u skladu s tvojim željama!
