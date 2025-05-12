@@ -151,5 +151,3 @@ while ($true) {
 * **Webhook URL**: Change `DISCORD_WEBHOOK_HERE` to your actual Discord webhook URL.
 
 ---
-
-Ovaj README je sada pripremljen za oba jezika i daje jasne upute za korištenje skripte na oba jezika.
