@@ -12,8 +12,6 @@ Ovaj korisni teret Flipper Zero pokreće skriptu PowerShell koja povremeno snima
 
 - Radi na Windows 10 i 11.
 - Možda neće ispravno funkcionirati na svim sustavima zbog razlika u dozvolama, antivirusnim postavkama ili konfiguracijama sustava Windows.
-- Namijenjeno samo u obrazovne i šalilske svrhe.
+- Namijenjeno samo u obrazovne svrhe.
 
-## Odricanje od odgovornosti
 
-Koristite odgovorno i uz dopuštenje. Neovlaštena uporaba može predstavljati kršenje zakona.
