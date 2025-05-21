@@ -1,17 +1,14 @@
-# Snimanje zaslona na Discord Webhook
+# BadUSB
 
-Ovaj korisni teret Flipper Zero pokreće skriptu PowerShell koja povremeno snima snimke zaslona preko cijelog zaslona na Windows računalu i prenosi ih na Discord webhook.
+This is my personal test repository for BadUSB scripts and experiments.
+It contains various payloads and scripts I'm working on or testing.
 
-## Upotreba
+⚠️ **Note:**
+All officially released and stable versions of these scripts are published and maintained at:
+[https://github.com/hooker01/FlipperZero-Payloads](https://github.com/hooker01/FlipperZero-Payloads)
 
-- Zamijenite rezervirano mjesto `WEBHOOK_LINK` u skripti svojim stvarnim URL-om web-dojavnika za Discord.
-- Pokrenite korisni teret na ciljnom Windows računalu.
-- Skripta će tiho snimati i slati snimke zaslona svakih 15 sekundi.
+Use this repository for testing and experimentation only.
 
-## Bilješke
 
-- Radi na Windows 10 i 11.
-- Možda neće ispravno funkcionirati na svim sustavima zbog razlika u dozvolama, antivirusnim postavkama ili konfiguracijama sustava Windows.
-- Namijenjeno samo u obrazovne svrhe.
 
 
